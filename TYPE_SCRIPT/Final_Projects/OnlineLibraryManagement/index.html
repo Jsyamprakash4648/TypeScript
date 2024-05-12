@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online_library_management</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="Js/index.js" ></script>
+</head>
+
+<body>
+
+    <div class="mainMenuDiv" id="mainMenuDiv">
+        <fieldset id="headerfeildsetID">
+           <h1 >Welcome to online library management System</h1>
+           <form action="" id="headerform">
+               <input type="button" id="newUserButton" onclick="newUserB()" value="UserRegistration">
+               <input type="button" id="existing_User" onclick="existing_User_Button()" value="UserLogin">
+            </form>
+            
+        </fieldset>       
+    </div>
+
+    <div class="bodyDiv">
+        <div id="UserRegistrationdiv">
+            <fieldset id="UserRegistrationdfeildset">
+                <legend>UserRegistration form</legend>
+                <form  id="asdf">
+                    <label for="">UserName </label><br>
+                    <input type="text" id="inputUsername">
+
+                    <br><br>
+                    <label for="">Password </label><br>
+                    <input type="text" id="inputPassword">
+
+                    <br><br>
+                    <label for="">Mail Id </label><br>
+                    <input type="text" id="inputMailID">
+
+                    <br><br>
+                    <label for="gen">Select Gender </label> <br>
+
+                    <input type="radio" name="gen" id="inputGender" value="Male">Male
+                    <input type="radio"  name="gen" id="inputGender" value="FeMale">FeMale
+
+                    <br><br>
+                    <label for="gen">Select Department </label> <br>
+
+                    <input type="radio" name="Department" id="inputDepartment" value="EEE">EEE
+                    <input type="radio" name="Department"  id="inputDepartment" value="ECE">ECE
+                    <input type="radio" name="Department"  id="inputDepartment" value="CSE">CSE
+
+                    <br><br>
+                    <label for="">PhoneNumber </label><br>
+                    <input type="text" id="inputPhoneNumber">
+
+                    <br><br>
+                    <label for="">wallet Balance  </label><br>
+                    <input type="number" id="inputwalletBalance">
+
+                    <label for="">Upload rofile <Picture></Picture>  </label><br>
+                    <input type="file" id="inputpicture" accept="image/*" >
+
+
+                    <br><br>
+                    <input type="submit" value="submit">
+                </form>
+            </fieldset>
+                    <!-- //registrationformsubmitB -->
+        </div>
+
+        <div id="userlogindiv">
+            <fieldset id="userloginfeildset">
+                <label for="">UserName </label>
+                <input type="text" name="" id="logininputusername" value="Ravichandran"><br><br>
+
+                <label for="">Password </label>
+                <input type="text" name="" id="logininputpassword" value="abc@123"><br><br>
+
+                <input type="button" name="" onclick="loginsubmitB()" id="loginsubmit" value="Submit">
+            </fieldset>
+               
+        </div>
+
+
+        <div id="submenudiv">
+            <fieldset>
+                <legend><span>hi syam</span></legend><br>
+                <input type="button" name="rechargebutton" onclick="" id=""  value="Home">
+                <input type="button" name="rechargebutton" onclick="Borrowbook()"  id="borrowbook" value="Borrowbook">
+                <input type="button" name="rechargebutton" onclick="showBorrowedhistory()" id="Showborrowedhistory" value="Show_Borrowed_history">
+                <input type="button" name="rechargebutton" onclick="returnBooks()"  id="ReturnBooks" value="ReturnBooks">
+                <input type="button" name="rechargebutton" onclick="walletrecharge()"  id="WalletRechargeID" value="Wallet Recharge">
+                <input type="button" name="rechargebutton" onclick="exit()" id="Exit"  value="Exit">
+
+                <input type="button" onclick="download()" value="download" id="downldButton">
+
+                <img src="" alt="" id="222">
+
+            </fieldset> 
+          </div>
+          
+          <div class="borrowbookdiv" id="borrowbookdivID">
+
+            <table border="2">
+                <thead>
+                    <th>BookID</th>
+                    <th>BookName</th>
+                    <th>AuthorName</th>
+                    <th>BookCount</th>
+                    <th>Choose</th>
+                </thead>
+
+                <tbody id="bookdetailstable">
+
+                </tbody>
+            </table>
+
+
+          </div>
+
+
+          <div class="borrowbookhistorydiv" id="DisbookhistoryID">
+
+            <table id="borrowbooktable" border="2">
+                <thead>
+                      <tr>
+                          <th>BorrowID</th>
+                          <th>BookID</th>
+                          <th>UserID</th>
+                          <th>BorrowedDate</th>
+                          <th>BorrowBookCount</th>
+                          <th> Status</th>
+                          <th>PaidFineAmount</th>
+                      </tr>
+                </thead>
+                <tbody id="borrowlist">
+                </tbody>
+            </table>
+
+          </div>
+
+
+        
+            <div class="rechargeWalletDiv" id="rechargeWalletDiv1">
+                <label for="">Enter Amount to Recharge</label><br><br>
+                <input type="number" name="" id="InputrechargeAmount">
+                <input type="button" id="InputrechargeAmountbutton" onclick="funInputrechargeAmountB()"  value="submit">
+            </div>
+
+
+            <!--<input type="file" name="" accept="image/*" id="">-->   
+
+        
+    </div>
+ 
+    
+    <!-- <img src="${URL.createOjectURL(medicine.picture)}" alt="" srcset=""> -->
+    
+
+   
+    
+</body>
+
+</html>
+
+
+
+
+
+

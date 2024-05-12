@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <script src="project.js"></script>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <fieldset id="homeform">
+        <legend>Welcome to syn_Medicals</legend>
+
+    
+    <form action="" style="text-align: center;">
+
+        <input type="button" id="sign_up_button" onclick="dis_singupform()" value="Sign up" >
+        <input type="button" id="sign_in_button" onclick="dis_singinform()" value="Sign In" >
+        
+       
+    </form>
+</fieldset>
+
+
+    <fieldset id="Sign_up_form">
+    <legend>Sign up form</legend>
+<form action="">
+    <label for="email">Email</label><br>
+    <input type="text" id="email">
+
+    <br><br>
+    <label for="password">Password</label><br>
+    <input type="password" id="password">
+
+    <br><br>
+    <label for="Confirm_Password"> Confirm Password</label><br>
+    <input type="password" id="Confirm_Password">
+
+    <br><br>
+    <label for="phonenumber"> phone Number</label><br>
+    <input type="number" id="phonenumber">
+    
+    <br><br>
+    <input type="button" onclick="signup_submitdetails()" value="submit">
+
+
+</form>
+</fieldset>
+
+
+
+
+<fieldset id="Sign_in_form">
+    <legend>Sign In form</legend>
+        <form action="">
+         <label for="userinput_email">Email</label><br>
+         <input type="text" id="userinput_email"  value="Abcd@1234">
+
+        <br><br>
+        <label for="userinput_password">Password</label><br>
+        <input type="password" id="userinput_password" value="Abcd@1234">
+
+        
+        <br><br>
+        <input type="button" onclick="signin_details()" value="login" >
+
+</form>
+</fieldset>
+
+
+<fieldset id="user_home">
+    <legend>Sync Medicals </legend>
+<form action="" id="userinput_email_homepage">
+    <h3 id="Welcome_message">Welcome to Sync Medicals</h3>
+    <input type="button" onclick="display_medicine_detail()" id="medicine_details" value="Medicine Details">
+
+    <input type="button" onclick="PurchaseButton()" id="Purchase" value="Purchase">
+
+    <input type="button" onclick="cancelbutton()" id="Cancel" value="Cancel">
+
+    <input type="button" onclick="walletrechargebutton()" id="Recharge_Wallet" value="Recharge Wallet">
+
+    <input type="button" onclick="Show_Balancebutton()" id="Show--Balance" value="Show Balance">
+
+    <input type="button" onclick="oder_historybutton()" id="oder_history" value="oder_history">
+
+    <input type="button" name="" id="logoutbutton" onclick="logout()" value="logout">
+
+</form>
+</fieldset>
+
+
+
+
+
+
+    <fieldset id="Medicine_Details_table">
+        <legend>Medicine Details</legend>
+        <input type="button" id="Addmedicinebutton" value="Add Medicine" onclick="Addmedicinebutton()" >
+        <input type="button" onclick="Home()" id="home" value="Back">
+    
+        <table border="2"  id="medicinetable">
+              
+    
+            
+            
+    
+            
+    
+        </table>
+    
+    </fieldset>
+    
+
+
+
+
+
+
+
+
+
+
+<fieldset id="walletrecharge" >
+    <legend>wallet recharge portal  </legend>
+<form action="" >
+    <label for=""> enter amount :</label><br>
+    <input type="number" name="" id="input_amount" >
+    <br><br>
+    <input type="button" onclick="walletRecharge()" value="Submit">
+
+</form>
+<input type="button" onclick="Home()" id="home" value="Back">
+</fieldset>
+
+
+
+<table  border="2" id="balance_table">
+    <tr>
+        <th>your wallet balance: </th>
+        <th><span id="current_balance"></span></th>
+    </tr>
+
+    <tr>
+        <td colspan="2"><input type="button" onclick="gotouserhome()" id="gotouserhome" value="go to home"></td>
+    </tr>
+    <tr>
+        
+    </tr>
+
+   <!--<input type="button" name="" id="logoutbutton" onclick="logout()" value="logout">--> 
+</table>
+
+
+
+
+<!--
+    orderDetails Table
+-->
+
+<table id="orderdetails_table" id="Adddefaultorderdetails()">
+    <tr>
+        <th>order Id</th>
+        <th>UserName</th>
+        <th>Medicine name</th>
+        <th>Order Total Price</th>
+        <th>Ordr Status</th>
+        <th rowspan="5"><input type="button" onclick="Home()" id="home" value="Back"></th>
+
+    </tr>
+   
+   
+
+
+</table>
+
+
+<div id="purchase_Medicine_Div">
+
+
+    <table border="2"  id="purchase_Medicine_Details_table">
+        <tr><th>Medicine ID</th>
+            <th>Medicine Name</th>
+            <th> Price</th>
+            <th>Quantity</th> 
+            <th>Medicine Expiry</th>
+            <th>choose</th>
+                   
+        </tr>   
+    </table>  
+    <input type="button" onclick="Home()" id="home" value="Back">
+</div>
+
+
+
+
+<div id="medicinecount_div">
+<label for="">enter mediine count you want:</label>
+<input type="number" name="" id="medicineinputcount">
+<input type="button" name="" onclick="medicinecountinputSubmit()" value="submit">
+</div>
+
+
+
+
+
+
+
+    <div id="Cancel_Medicine_Div">
+
+
+        <table border="2"  id="Cancel_Medicine_Details_table">
+            <tr><th>Order ID</th>
+                <th>User Name</th>
+                <th> Medicine Name</th>
+                <th>Total price</th> 
+                <th>order Status</th>
+                <th>choose</th>
+                       
+            </tr>   
+        </table>  
+        <input type="button" onclick="Home()" id="home" value="Back">
+    </div>
+    
+
+
+
+
+<div id="Addmedicinediv" >
+        <h3 style="text-align: center;">Add Medicine</h3>
+    <form action="" id="AddmedicinedicForm"   >
+        <label for="">Enter Medicine name:</label>
+        <input type="text" id="input_medicineName" ><br><br>
+
+        <label for="">Enter medicine price: </label>
+        <input type="number"  id="Medcine_price"><br><br>
+
+        <label for="">Enter medicine count: </label>
+        <input type="number"  id="Medcine_Count"><br><br>
+
+        <label for="">Enter medicine Expiry Date: </label><br><br>
+        <input type="date"  id="medicine_Expiry_Date" > <br><br>
+
+        <input style="margin-left: 40%; margin-bottom: 20px;" type="button" id="addmedicinesubmitbutton" onclick="Addmedicine()" value="Add">
+
+
+
+    </form>
+</div>
+
+
+
+
+
+<!--
+    Edit medicine detals div below
+-->
+
+
+<div id="Editmedicinediv" >
+    <h3 style="text-align: center;">Edit Medicine</h3>
+<form action="" id="Edit_medicinedicForm"   >
+    <label for="">Edit Medicine name:</label>
+    <input type="text" id="edit_input_medicineName" ><br><br>
+
+    <label for="">Edit medicine price: </label>
+    <input type="number"  id="edit_Medcine_price"><br><br>
+
+    <label for="">Edit medicine count: </label>
+    <input type="number"  id="edit_Medcine_Count"><br><br>
+
+    <label for="">Edit medicine Expiry Date: </label>
+    <input type="date"  id="edit_medicine_Expiry_Date" > <br><br>
+
+    
+
+    
+    <input type="button" style="margin-left: 40%; margin-bottom: 20px;"  id="editmedicinesubmitbutton" onclick="EditMedicineSubmitbutton()" value="Add" >
+
+
+
+</form>
+
+
+<th ><td rowspan="5"><input type="button" onclick="Home()" id="home" value="Back"></td></th>
+</div>
+
+
+
+    
+</body>
+</html>
+

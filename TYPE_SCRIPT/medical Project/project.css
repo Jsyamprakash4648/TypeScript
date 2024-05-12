@@ -1,0 +1,177 @@
+#homeform
+{
+    width: 40% ;
+    height: 60%;
+   text-align: center;
+   margin-left: 20%;
+   margin-top: 20%;
+  
+   
+}
+
+#Sign_up_form
+{
+    width: 40% ;
+    height: 60%;
+   text-align: center;
+   margin-left: 20%;
+   display: none;
+  
+
+}
+
+
+form 
+{
+    text-align: left;
+
+}
+
+#Sign_in_form
+{
+    
+    width: 40% ;
+    height: 60%;
+   text-align: center;
+   margin-left: 20%;
+   display: none;
+
+}
+
+#user_home
+{
+    width: 90% ;
+    height: 100px;
+   text-align: center;
+   display: none;
+    
+}
+
+
+
+#Medicine_Details_table
+{
+    width: 90% ;
+    height: 60%;
+   text-align: left;
+   display: none;
+   
+
+}
+
+#medicinetable
+{
+    border-collapse: collapse;
+    border: 2px solid black;
+
+}
+ 
+
+
+
+
+#walletrecharge
+{
+    width: 40% ;
+    height: 60%;
+   text-align: center;
+   display: none;
+  
+
+}
+
+
+#balance_table
+{
+    display: none;
+}
+
+#orderdetails_table
+{
+    border-collapse: collapse;
+    border: 2px solid  black;
+    display:none;
+    
+    width: 50% ;
+    height: 60%;
+   text-align: center;
+    
+    
+}
+
+th
+{
+    margin-left: 20px;
+}
+
+
+#purchase_Medicine_Div
+{
+    display: none;
+}
+
+#medicinecount_div
+{
+    display: none;
+}
+
+#Cancel_Medicine_Div
+{
+    display: none;
+}
+
+
+
+#Addmedicinediv
+{
+    border: 3px solid black;
+    width: 40%;
+    height: 500px;
+    display: none;
+
+    
+}
+
+#AddmedicinedicForm
+{
+    border: 2px solid black;
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 50px;
+    box-shadow:  0 0 5px 5px grey;
+}
+
+
+
+#Editmedicinediv
+{
+    
+    border: 3px solid skyblue;
+    width: 40%;
+    height: 300px;
+    display: none;
+
+}
+
+
+#box
+{
+    border-top: 300px;
+    width: 50%;
+    height: 600px;
+    background-color: grey;
+    margin-left: 100px;
+    
+
+}
+
+
+table
+{
+    width: 70%;
+    min-width: 40%;
+    padding: 10px;
+    border:  3px solid black;
+
+}
+

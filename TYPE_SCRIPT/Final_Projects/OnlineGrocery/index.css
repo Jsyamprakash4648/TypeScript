@@ -1,0 +1,191 @@
+body
+{
+    background-color: aqua;
+}
+
+/* .bodyDiv{
+    background-color: aqua;
+
+} */
+
+#UserRegistrationdfeildset
+{
+    width: 20%;
+    margin-left: 30%;
+    margin-top: 2%;
+    display: none;
+    background-color: palegreen;
+}
+
+#userloginfeildset
+{
+    width: 20%;
+    margin-left: 30%;
+    margin-top: 2%;
+    display: none;
+    background-color: palegreen;
+}
+#profileimage{
+    width: 7%;
+    height: 9%;
+    display: inline;
+    padding: 0%;
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px 4px grey;
+    
+}
+
+.SubMenuheaderDiv{
+    background-color: palegreen;
+    margin: 0%;
+    display: none;
+
+}
+
+.subButtons
+{
+    
+    height: 2%;
+    margin: 0%;
+    border: 2px  solid salmon;
+    margin: 0%;
+    box-shadow: 2px 2px 2px 2px grey;
+
+
+}
+
+
+
+#stockinputfieldset
+{
+    width: 20%;
+    margin-left: 30%;
+    margin-top: 2%;
+    background-color: palegreen;
+    border: 2px  solid black;
+    padding: 2%;
+    display: none;
+    
+}
+
+#produsctdisTab
+{
+    border-collapse: collapse;
+    
+
+}
+
+#produsctdisDIv
+{
+    display: none;
+
+}
+
+.bddydiv
+{
+    display: none;
+}
+
+#productimage
+{
+    
+    width:40vh ;
+    height: 20%;
+    align-items: center;
+    display: flex;
+    
+    
+
+}
+
+#bodyconatiner
+{
+    height: 100%;
+    display: none;
+    
+
+}
+/* ------------------------------------------- */
+#PhotoContainer
+{
+ 
+    /* display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: auto; */
+
+    
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* justify-content: center;
+  display: flex;
+  flex-wrap: wrap; */
+  /* width: 100%; */
+  /* gap: 20px; */
+  /* background-color: antiquewhite; */
+  /* margin-left: 30px; */
+  /* display: none; */ 
+  
+  
+}
+
+#card
+ { 
+      /* margin-left: 2%; */
+    /* background-color: red;
+    border-radius: 10px;
+    padding:10px;
+    border: 2px solid black; */ 
+    /* box-shadow:  0px 0px 2px 5px gray; */
+    /* margin: 1%; */
+    /* width: 18%; */
+    /* margin-left:5%;  */
+     /* margin-right: 15%; */
+height: auto;
+width: 20%;
+padding: 1rem;
+box-sizing: border-box;
+border: 2px solid black;
+margin: 0.5rem;
+background-color: brown;
+
+     
+}
+
+
+
+#buybutton
+{
+   margin-left: 38%;
+   width: 25%;
+}
+
+.rechargeWalletDiv
+{
+    background-color: aquamarine;
+    width: 30%;
+    height: 150px;
+    align-content: center;
+    margin-left: 28%;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-left: 20px;
+    display: none
+    ; 
+
+}
+
+
+#cartTablediv
+{
+    display: none;
+}
+
+
+
+#orderdetailstable
+{
+    display: none;
+}

@@ -1,0 +1,229 @@
+
+body{
+    border: none;
+    margin: 0;
+    
+    
+}
+
+
+#headerfeildsetID
+{   
+    display: flex;
+    width: 98.1%;
+    height: 100px;
+    background-color: #e9e9e9;
+    justify-content: center;
+   
+  
+    
+}
+#headerform
+{
+    width: 40%;
+    padding: 30px;
+    background-color: transparent   ;
+    display: flex;
+    justify-content: right;
+    margin-left: 20%;
+
+}
+
+
+#newUserButton 
+{background-color: aquamarine;
+    width: 30%;
+    height: 50px;
+     display: inline;
+     float: left;
+     border-radius: 10px;
+     margin-right: 20px;
+     font-size: 120%;
+
+}
+#existing_User_Button
+{
+    background-color: aquamarine;
+   width: 30%;
+   height: 50px;
+    display: inline;
+    float: left;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-size: 120%;
+
+}
+
+
+.newuserregistrationformDiv
+{   background-color: aquamarine;
+    width: 40%;
+    height: 350px;
+    align-content: center;
+    margin-left: 28%;
+    display: flexbox;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: none;
+
+
+}
+
+.newuserform
+{
+    background-color: transparent;
+    width: 40%;
+    height: 250px;
+    align-content: center;
+    margin-left: 28%;
+}
+
+#newuserformSubmitbutton
+{
+    background-color: #e9e9e9 ;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+input{
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 20px;
+   
+}
+
+.ExistinguserDiv
+{
+
+    background-color: aquamarine;
+    width: 40%;
+    height: 350px;
+    align-content: center;
+    margin-left: 28%;
+    display: flexbox;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    display: none;
+
+
+}
+
+.UserSubmenu
+{   
+    
+    border: 0;
+    background-color:#e9e9e9;
+    height: 150px;
+    width: 100%;
+    display: none;
+    margin-top: 0%;
+  
+   
+}
+
+.submenuoptions
+{
+    background-color: transparent;
+    height: 50px;
+    margin-left: 10px;
+
+}
+
+.usermenubuttons
+{
+
+    background-color: aquamarine;
+    width: 180px;
+    height: 50px;
+    display: inline;
+    float: left;
+    border-radius: 0%;
+    border-color: black;
+    font-size: 120%;
+
+}
+
+.ticketfairdetailsDiv
+{   background-color: #e9e9e9;
+    border: 1px solid  black;
+    border-collapse: collapse;   
+    height: 525px;
+    display: none;
+    
+    align-items: center;
+
+
+}
+
+#ticketfairdetailtable222
+{ background-color: aquamarine;
+    border-collapse: collapse; 
+    width: 40%;
+    height: 30%;  
+    padding: 2px;
+    margin-left: 5%;
+    
+}   
+
+#buyticket
+{   background-color: rgb(0, 245, 163);
+    width: 100%;
+    padding: 2px;
+  
+}
+
+.rechargeWalletDiv
+{
+    background-color: aquamarine;
+    width: 30%;
+    height: 150px;
+    align-content: center;
+    margin-left: 28%;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-left: 20px;
+    display: none; 
+}
+
+.ballanceDiv
+{
+    background-color: aquamarine;
+    width: 30%;
+    height: 150px;
+    align-content: center;
+    margin-left: 28%;
+    display: flexbox;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-left: 20px;
+    display: none;
+   
+
+}
+
+.travelHistorydiv
+{   background-color: aquamarine;
+    width: 100%;
+    height: 525px;
+    display: flexbox;
+    border: 2px solid black;
+    padding-left: 20px;
+    display: none;
+    
+}
+
+#travelHistorytable222
+{
+    width: 60%;
+    margin-top: 5%;
+    border-collapse: collapse;
+     margin-left: 5%;
+
+}
+
+

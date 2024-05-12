@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+   
+</head>
+<body>
+
+    <div class="mainMenuDiv" id="mainMenuID">
+        <fieldset id="headerfeildsetID">
+           <h1 >Welcome to online Grocery Store</h1>
+           <form action="" id="headerform">
+               <input type="button" id="newUserButton" onclick="newUserB()" value="UserRegistration">
+               <input type="button" id="existing_User" onclick="existing_User_Button()" value="UserLogin">
+            </form>
+            
+        </fieldset>       
+    </div>
+
+
+    
+    <div class="bodyDiv">
+
+        <div id="UserRegistrationdiv">
+            <fieldset id="UserRegistrationdfeildset">
+                <legend>UserRegistration form</legend>
+                <form  id="formID">
+                    <label for="">UserName </label><br>
+                    <input type="text" id="inputUsername">
+
+                    <br><br>
+                    <label for="">Password </label><br>
+                    <input type="text" id="inputPassword">
+
+                    <br><br>
+                    <label for="">Mail Id </label><br>
+                    <input type="text" id="inputMailID">
+
+
+                    <br><br>
+                    <label for="">PhoneNumber </label><br>
+                    <input type="text" id="inputPhoneNumber">
+
+                    <br><br>
+                    <label for="">Address </label><br>
+                    <input type="text" id="inputAddress">
+
+                    <br><br>
+                    <label for="">wallet Balance  </label><br>
+                    <input type="number" id="inputwalletBalance">
+
+
+
+
+                    <br><br>
+                    <label for="">Upload rofile <Picture></Picture>  </label><br>
+                    <input type="file" id="inputpicture" accept="image/*" >
+
+
+                    <br><br>
+                    <input type="submit" value="submit">
+                </form>
+            </fieldset>
+
+                    <!-- //registrationformsubmitB -->
+        </div>
+
+
+
+        <div id="userlogindiv">
+            <fieldset id="userloginfeildset">
+                <label for="">UserName </label>
+                <input type="text" name="" id="logininputusername" value="syamprakash"><br><br>
+
+                <label for="">Password </label>
+                <input type="text" name="" id="logininputpassword" value="Syam@98666"><br><br>
+
+                <input type="button" name="" onclick="loginsubmitB()" id="loginsubmit" value="Submit">
+            </fieldset>
+               
+        </div>
+
+
+
+        <div class="SubMenuheaderDiv" id="SubMenuheaderID">
+            
+            <fieldset id="submenuheaderfeildsetID">
+                <h5 id="greetings"></h5>
+               
+               
+               <form action="" id="headerform">
+
+                   <input type="button" class="subButtons" id="" onclick="" value="Home">
+                   <input type="button" class="subButtons" id="Addstock" onclick="funshowstacok()" value="Stock ">
+                   <input type="button" class="subButtons" id="" onclick="funpurchase()" value="Purchase">
+                   <input type="button" class="subButtons" id="" onclick="funshowcarttable()" value="Cart">
+                   <input type="button" class="subButtons" id="" onclick="vieworderHistory()" value="Order History">
+                   <input type="button" class="subButtons" id="" onclick="rechargewallet()" value="Recharge Wallet">
+                   <input type="button" class="subButtons" id="" onclick="" value="Sign out">
+                </form>
+                
+            </fieldset>       
+        </div>
+
+        <div>
+            <fieldse id="stockinputfieldset">
+                <legend>stock Update</legend>
+                    <form action="" id="stockinputform">
+                        <br><br>
+                             <label for="">Material Name </label><br>
+                             <input type="text" id="inputmaterilname"><br><br>
+
+                             <label for="">Material desciption </label><br>
+                             <input type="text" id="inputmaterialdesciption"><br><br>
+
+                             <label for="">Available Quantity </label><br>
+                             <input type="number" id="inputavailablequantity"><br><br>
+
+                             <label for="">Unit Price </label><br>
+                             <input type="number" id="inputunitprice"><br><br>
+
+                             <label for="">Purchase Date </label><br>
+                             <input type="date" id="inputpurchasedate"><br><br>
+
+                             <label for="">Expairy Date </label><br>
+                             <input type="date" id="inputexpairydate"><br><br>
+
+                             <label for="">picture </label><br>
+                             <input type="file" id="inputpicture22"><br><br>
+
+                             <button type="submit" value="Submit">Submit</button>
+
+
+
+                    </form>
+               
+            </fieldset>
+        </div>
+
+
+
+
+
+        <div id="produsctdisDIv">
+            <input type="button" value="Add" onclick="funaddstacok()" >
+            <table border="2" id="produsctdisTab">
+                <thead>
+                        <th>productName</th>
+                        <th>quantityAvailable</th>
+                        <th>productDescription</th>
+                        <th>pricePerQuantity</th>
+                        <th>Purchasedate</th>
+                        <th>expiryDate</th>
+                        <th>Product picture</th>
+                        <th>Choose</th>
+                </thead>
+
+                <tbody id="tbody1">
+
+                </tbody>
+            </table>
+        </div>
+
+
+<div id="bodyconatiner" class="bddydiv">
+        <div id="PhotoContainer">
+            
+        </div>
+ </div>
+
+
+
+
+
+        <div class="rechargeWalletDiv" id="rechargeWalletID">
+            <label for="">Enter Amount to Recharge</label><br><br>
+            <input type="number" name="" id="InputrechargeAmount">
+            <input type="button" id="InputrechargeAmountbutton" onclick="funInputrechargeAmountbutton()"  value="submit">
+        </div>
+
+
+
+        <div id="cartTablediv">
+            <table border="2">
+            
+                <thead> <th>Product Name</th>
+                        <th>Product Price</th> 
+                        <th> Enter Count </th>
+                        <th>Choose</th>
+                </thead >
+
+                <tbody id="Tbody22">
+
+                </tbody>
+               
+       
+            </table>
+
+            <input type="button" style="margin-left: 10%;" name="" id="CartitemBuy" onclick="funCartitemBuy()" value="Buy">
+        </div>
+
+
+
+
+
+        <div  id="orderdetailstable">
+            <span></span>
+            <table border="2">
+                <thead>
+                    <th> productname </th>
+                    <th> purchaseCount </th>
+                    <th> priceOfOrder</th>
+                </thead>
+
+                <tbody  id="historybody">
+
+                </tbody>
+            </table>
+        </div>
+
+
+
+<script src="Js/index.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="index1.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+function walletrechargebutton()
+{
+    let showwalletrechargeportal=(document.getElementById("walletrecharge"))as HTMLDivElement;
+    showwalletrechargeportal.style.display="block"
+
+
+
+}
+
+function walletRechargeinside(amount:number)
+{
+    CurrentUser.WalletBalance=CurrentUser.WalletBalance+amount;
+    alert(CurrentUser.WalletBalance);
+
+
+
+}
+
+
+function walletRecharge()
+{
+    let RechargeAmount=parseInt((document.getElementById("input_amount") as HTMLInputElement).value);
+    walletRechargeinside(RechargeAmount);
+   
+
+    alert("Wallet recharge Succesfull....")
+    let showwalletrechargeportal=(document.getElementById("walletrecharge"))as HTMLDivElement;
+    showwalletrechargeportal.style.display="none";
+
+    let showhome=(document.getElementById("user_home"))as HTMLDivElement;
+    showhome.style.display="block";
+
+
+}
+
+function Show_Balance()
+{
+    alert("balance table");
+    
+
+
+    let balance=(document.getElementById("current_balance") as HTMLInputElement);
+    
+    balance.innerHTML=CurrentUser.WalletBalance.toString();
+    alert(balance);
+   
+
+    let showbalancedisplay=document.getElementById("balance_table") as HTMLInputElement;
+    showbalancedisplay.style.display="block";
+
+
+
+}
+
+
